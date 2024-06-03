@@ -5,7 +5,7 @@ console.log(BASE_URL);
 
 export async function getDashboard() {
   try {
-    const response = await axios.get(`${BASE_URL}api/dashboard`);
+    const response = await axios.get(`/api/dashboard`);
     return response.data;
   } catch (error) {
     console.error(error);
